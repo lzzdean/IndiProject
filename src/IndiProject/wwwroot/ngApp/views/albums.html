@@ -1,0 +1,18 @@
+﻿<table class="table table table-striped table table-bordered">
+    <thead>
+    <tr>
+    <td>Albums</td>
+    <td>Artists</td>
+     <td>Actions</td>
+        </tr>
+        </thead>
+
+    <tbody>
+        <tr ng-repeat="album in controller.albums">
+            <td>{{album.name}}</td>
+            <td>{{album.artist.name}}</td>
+        <td><a href="/deleteAlbum/{{album.id}}">Delete Album</a> || <a href="/editAlbum/{{album.id}}">Edit Album</a></td>
+        </tr>
+       
+    </tbody>
+</table>

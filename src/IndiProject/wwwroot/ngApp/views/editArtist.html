@@ -1,0 +1,12 @@
+﻿<form ng-submit="controller.editArtist()">
+    <label>
+        Artist Name:
+        <input type="text" placeholder="Name" ng-model="controller.artist.name" ng-bind="controller.artist.name" />
+    </label>
+   
+    <label>
+        Genre:
+        <input type="text" placeholder="Genre" ng-model="controller.artist.genre" ng-bind="controller.artist.genre" />
+    </label>
+    <input type="submit" value="Edit Artist" />
+</form>
